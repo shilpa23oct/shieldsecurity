@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shield Security Services Pune - Professional Safety & Security Services You Can Trust. ISO 9001:2015 certified security company providing manned guarding, housekeeping, bouncer services, CCTV surveillance across Pune, Maharashtra.">
+    <meta name="keywords" content="security services pune, security guards pune, housekeeping services pune, bouncer services pune, CCTV surveillance pune, manned guarding pune, security company pune, professional security pune">
+    <meta name="author" content="Shield Security Services">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Shield Security Services Pune | Professional Safety & Security Services">
+    <meta property="og:description" content="ISO 9001:2015 certified security company in Pune offering professional security guards, housekeeping, bouncer services, and CCTV surveillance. 24/7 protection you can trust.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shieldsecurityservices.com">
+    <meta property="og:image" content="/images/logo.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Shield Security Services Pune | Professional Safety & Security Services">
+    <meta name="twitter:description" content="Professional security services in Pune. ISO certified, PSARA licensed. 24/7 security solutions for all industries.">
+    <title>Shield Security Services Pune | Professional Safety & Security Services</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <img src="/images/logo.jpeg" alt="Shield Security Services" class="loading-logo">
+            <div class="loading-spinner"></div>
+            <p>Loading Shield Security Services...</p>
+        </div>
+    </div>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-left">
+                    <span><i class="fas fa-envelope"></i> shieldservices.official@gmail.com</span>
+                    <span><i class="fas fa-phone"></i> +91 73853 90359</span>
+                    <span><i class="fas fa-phone"></i> +91 99207 14444</span>
+                </div>
+                <div class="top-right">
+                    <a href="/admin/login" style="color: #ffd700;"><i class="fas fa-user-shield"></i> Admin</a>
+                    <a href="https://www.instagram.com/shieldsecurityservices/" target="_blank" style="color: #E4405F;"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/917385390359" target="_blank" style="color: #25D366;"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <img src="/images/logo.jpeg" alt="Shield Security Services" style="height: 80px; width: auto;">
+                        <span class="logo-main">Shield Security Services</span>
+                    </div>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="#home" class="nav-link">Home</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#services" class="nav-link">Services</a></li>
+                        <li><a href="#training" class="nav-link">Training</a></li>
+                        <li><a href="#industries" class="nav-link">Industries</a></li>
+                        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                    <div class="nav-search">
+                        <input type="text" id="searchInput" placeholder="Search..." class="search-input">
+                        <button class="search-btn" onclick="performSearch()"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-modern">
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <div class="hero-overlay"></div>
+                <div class="hero-bg-image"></div>
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Professional Safety & Security Services You Can Trust</h1>
+                        <p class="hero-subtitle">Protecting What Matters Most - 24/7 Security Solutions in Pune</p>
+                        <div class="hero-buttons">
+                            <a href="#contact" class="btn btn-primary">Get Free Quote</a>
+                            <a href="tel:7385390359" class="btn btn-secondary"><i class="fas fa-phone"></i> Call Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <section class="quick-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <i class="fas fa-users"></i>
+                    <h3>200+</h3>
+                    <p>Happy Clients Served Till Now</p>
+                </div>
+                <div class="stat-box">
+                    <i class="fas fa-user-shield"></i>
+                    <h3>500+</h3>
+                    <p>Trained Guards</p>
+                </div>
+                <div class="stat-box">
+                    <i class="fas fa-award"></i>
+                    <h3>35+</h3>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat-box">
+                    <i class="fas fa-clock"></i>
+                    <h3>24/7</h3>
+                    <p>Support Available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-modern">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image-section">
+                    <div class="about-images-grid">
+                        <div class="main-image">
+                            <img src="/images/team1.jpeg" alt="Shield Security Team">
+                            <div class="about-badge">
+                                <i class="fas fa-certificate"></i>
+                                <span>Licensed & Certified</span>
+                            </div>
+                        </div>
+                        <div class="side-images">
+                            <img src="/images/team21.jpeg" alt="Security Guards">
+                            <img src="/images/team22.jpeg" alt="Professional Team">
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content-section">
+                    <span class="section-tag">About Us</span>
+                    <h2>Doing The Right Thing At The Right Time!</h2>
+                    <p>Shield Security Services is a dynamic and forward-thinking organization, committed to delivering innovative and reliable security solutions to our clients. As an ISO 9001:2015 certified company, we uphold the highest standards of quality and excellence in every service we provide.</p>
+                    <p>We take pride in offering a comprehensive range of Security Management Services and remain dedicated to continually enhancing both the quality and scope of our operations. Our team of highly qualified and experienced professionals is focused on driving growth, efficiency, and constant improvement in security services.</p>
+                    <div class="company-values">
+                        <div class="value-item">
+                            <h4>Our Mission</h4>
+                            <p>To set new benchmarks in the security industry by delivering unmatched services, while creating a safe, healthy, and empowering environment that builds trust and lasting relationships with our clients.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-features">
+                <div class="vision-motto-row">
+                    <div class="feature-box vision-motto">
+                        <i class="fas fa-eye"></i>
+                        <div>
+                            <h4>Our Vision</h4>
+                            <p>To be the most preferred brand in the Security and Business Services market. Our growth philosophy is driven by our ability to seamlessly adapt to change, our uncompromising commitment to quality, and our continuous pursuit of exceeding customer expectations.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box vision-motto">
+                        <i class="fas fa-quote-right"></i>
+                        <div>
+                            <h4>Our Motto</h4>
+                            <p>"To Achieve 100% CLIENT SATISFACTION" - Thanking you and assuring you best of our services always.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="certifications-row">
+                    <div class="feature-box">
+                        <i class="fas fa-certificate"></i>
+                        <div>
+                            <h4>ISO 9001:2015 Certified</h4>
+                            <p>Highest standards of quality and excellence</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <i class="fas fa-shield-alt"></i>
+                        <div>
+                            <h4>PSARA Licensed</h4>
+                            <p>Licensed under PSARA Act, 2005</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <i class="fas fa-users"></i>
+                        <div>
+                            <h4>99.5% Customer Retention</h4>
+                            <p>Outstanding client satisfaction rate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-modern">
+        <div class="container">
+            <div class="section-header-modern">
+                <span class="section-tag">Our Services</span>
+                <h2>Comprehensive Security Solutions</h2>
+                <p>Professional security services tailored to your needs</p>
+            </div>
+            <div class="services-grid-modern">
+                <div class="service-card-modern featured">
+                    <div class="badge">Popular</div>
+                    <div class="service-img">
+                        <img src="/images/securitygurads.jpeg" alt="Security Guards">
+                    </div>
+                    <div class="service-content">
+                        <i class="fas fa-user-shield"></i>
+                        <h3>Hospital Security</h3>
+                        <p>Specialized security for healthcare facilities including patient safety, visitor management, and emergency response protocols</p>
+                        <ul class="service-features">
+                            <li>Patient & Staff Safety</li>
+                            <li>Visitor Access Control</li>
+                            <li>Emergency Response</li>
+                            <li>Medical Equipment Protection</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="service-card-modern">
+                    <div class="service-img">
+                        <img src="/images/team3.jpeg" alt="Bank Security">
+                    </div>
+                    <div class="service-content">
+                        <i class="fas fa-university"></i>
+                        <h3>Bank & Financial Security</h3>
+                        <p>High-security solutions for banks, ATMs, and financial institutions with trained personnel and advanced protocols</p>
+                        <ul class="service-features">
+                            <li>Cash Transit Security</li>
+                            <li>ATM Protection</li>
+                            <li>Vault Monitoring</li>
+                            <li>Customer Safety</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="service-card-modern">
+                    <div class="service-img">
+                        <img src="/images/team4.jpeg" alt="Restaurant Security">
+                    </div>
+                    <div class="service-content">
+                        <i class="fas fa-utensils"></i>
+                        <h3>Restaurant & Hotel Security</h3>
+                        <p>Professional security and housekeeping services for restaurants, hotels, and hospitality venues</p>
+                        <ul class="service-features">
+                            <li>Guest Safety & Comfort</li>
+                            <li>Property Protection</li>
+                            <li>Event Security</li>
+                            <li>Housekeeping Services</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="service-card-modern">
+                    <div class="service-img">
+                        <img src="/images/team5.jpeg" alt="Apartment Security">
+                    </div>
+                    <div class="service-content">
+                        <i class="fas fa-building"></i>
+                        <h3>Apartment & Society Security</h3>
+                        <p>Comprehensive security solutions for residential apartments, gated communities, and housing societies</p>
+                        <ul class="service-features">
+                            <li>Gate Security</li>
+                            <li>Visitor Management</li>
+                            <li>CCTV Monitoring</li>
+                            <li>Maintenance Support</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="service-card-modern">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=300&fit=crop" alt="IT Park Security">
+                    </div>
+                    <div class="service-content">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>IT Park & Corporate Security</h3>
+                        <p>Advanced security solutions for IT parks, corporate offices, and technology centers with access control systems</p>
+                        <ul class="service-features">
+                            <li>Access Control Systems</li>
+                            <li>Data Center Protection</li>
+                            <li>Employee Safety</li>
+                            <li>Visitor Management</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="service-card-modern">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=400&h=300&fit=crop" alt="Bungalow Security">
+                    </div>
+                    <div class="service-content">
+                        <i class="fas fa-home"></i>
+                        <h3>Bungalow & Villa Security</h3>
+                        <p>Premium security services for independent houses, bungalows, and luxury villas with personalized protection</p>
+                        <ul class="service-features">
+                            <li>Personal Protection</li>
+                            <li>Property Surveillance</li>
+                            <li>Housekeeping Services</li>
+                            <li>24/7 Monitoring</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="service-card-modern">
+                    <div class="service-img">
+                        <img src="/images/team2.jpeg" alt="School Security">
+                    </div>
+                    <div class="service-content">
+                        <i class="fas fa-school"></i>
+                        <h3>School & Educational Security</h3>
+                        <p>Specialized security for schools, colleges, and educational institutions focusing on student and staff safety</p>
+                        <ul class="service-features">
+                            <li>Student Safety</li>
+                            <li>Campus Monitoring</li>
+                            <li>Visitor Screening</li>
+                            <li>Emergency Protocols</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="service-card-modern">
+                    <div class="service-img">
+                        <img src="/images/event.jpeg" alt="Event Security">
+                    </div>
+                    <div class="service-content">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h3>Event & VIP Security</h3>
+                        <p>Professional event security, crowd management, and VIP protection services for all types of gatherings</p>
+                        <ul class="service-features">
+                            <li>Crowd Management</li>
+                            <li>VIP Protection</li>
+                            <li>Event Coordination</li>
+                            <li>Emergency Response</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Logos Section -->
+    <section class="clients-section">
+        <div class="container">
+            <div class="section-header-modern">
+                <span class="section-tag">Our Clients</span>
+                <h2>Trusted by Leading Organizations</h2>
+                <p>We proudly serve prestigious clients across various industries</p>
+            </div>
+            <div class="clients-grid">
+                <div class="client-logo">
+                    <img src="/images/client/client1.jpeg" alt="Client 1">
+                </div>
+                <div class="client-logo">
+                    <img src="/images/client/client2.png" alt="Client 2">
+                </div>
+                <div class="client-logo">
+                    <img src="/images/client/client3.png" alt="Client 3">
+                </div>
+                <div class="client-logo">
+                    <img src="/images/client/client4.png" alt="Client 4">
+                </div>
+                <div class="client-logo">
+                    <img src="/images/client/client 5.png" alt="Client 5">
+                </div>
+                <div class="client-logo">
+                    <img src="/images/client/8.png" alt="Client 8">
+                </div>
+                <div class="client-logo">
+                    <img src="/images/client/client8.png" alt="Client 8">
+                </div>
+                <div class="client-logo">
+                    <img src="/images/client/client9.png" alt="Client 9">
+                </div>
+                <div class="client-logo">
+                    <img src="/images/client/client10.jpeg" alt="Client 10">
+                </div>
+                <div class="client-logo">
+                    <img src="/images/client/client11.jpeg" alt="Client 11">
+                </div>
+                <div class="client-logo">
+                    <img src="/images/client/client12.jpeg" alt="Client 12">
+                </div>
+                <div class="client-logo">
+                    <img src="/images/client/client13.jpeg" alt="Client 13">
+                </div>
+                <div class="client-logo">
+                    <img src="/images/client/client14.jpeg" alt="Client 14">
+                </div>
+                <div class="client-logo">
+                    <img src="/images/client/client15.jpeg" alt="Client 15">
+                </div>
+                <div class="client-logo">
+                    <img src="/images/client/client16.jpeg" alt="Client 16">
+                </div>
+                <div class="client-logo">
+                    <img src="/images/client/client17.jpeg" alt="Client 17">
+                </div>
+                <div class="client-logo">
+                    <img src="/images/client/client18.jpeg" alt="Client 18">
+                </div>
+                <div class="client-logo">
+                    <img src="/images/client/client19.jpeg" alt="Client 19">
+                </div>
+            </div>
+            <p class="clients-note">and many more...</p>
+        </div>
+    </section>
+
+    <!-- Team Gallery Section -->
+    <section class="team-gallery">
+        <div class="container">
+            <div class="section-header-modern">
+                <span class="section-tag">Our Team</span>
+                <h2>Professional Security Personnel</h2>
+                <p>Meet our trained and certified security professionals</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="/images/team23.jpeg" alt="Security Team">
+                    <div class="gallery-overlay">
+                        <h4>Security Guards</h4>
+                        <p>Professional & Trained</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/team24.jpeg" alt="Security Team">
+                    <div class="gallery-overlay">
+                        <h4>Field Operations</h4>
+                        <p>24/7 Protection</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/team25.jpeg" alt="Security Team">
+                    <div class="gallery-overlay">
+                        <h4>Security Personnel</h4>
+                        <p>Trained Guards</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/bouncers.jpeg" alt="Bouncer Services">
+                    <div class="gallery-overlay">
+                        <h4>Bouncer Services</h4>
+                        <p>Event Security</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/bouncersteam.jpeg" alt="Professional Bouncers">
+                    <div class="gallery-overlay">
+                        <h4>VIP Protection</h4>
+                        <p>Elite Security</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/wholebouncer.jpeg" alt="Event Security">
+                    <div class="gallery-overlay">
+                        <h4>Event Management</h4>
+                        <p>Crowd Control</p>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Section -->
+    <section id="training" class="training-section">
+        <div class="container">
+            <div class="section-header-modern">
+                <span class="section-tag">Training Programs</span>
+                <h2>Professional Training & Development</h2>
+                <p>Comprehensive training programs for our security personnel</p>
+            </div>
+            <div class="training-grid">
+                <div class="training-card">
+                    <div class="training-image">
+                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=250&fit=crop" alt="Surveillance Control Room">
+                    </div>
+                    <div class="training-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Surveillance Control Room</h3>
+                    <p>Trained operators for monitoring live footage, incident reporting, system checks, and coordination with on-ground staff</p>
+                </div>
+                <div class="training-card">
+                    <div class="training-image">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=250&fit=crop" alt="Refresher Training">
+                    </div>
+                    <div class="training-icon">
+                        <i class="fas fa-redo"></i>
+                    </div>
+                    <h3>Refresher Training</h3>
+                    <p>Periodic training to update guards on new protocols, reinforce discipline, and re-certify emergency response</p>
+                </div>
+                <div class="training-card">
+                    <div class="training-image">
+                        <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=400&h=250&fit=crop" alt="Saluting Practice">
+                    </div>
+                    <div class="training-icon">
+                        <i class="fas fa-hand-paper"></i>
+                    </div>
+                    <h3>Saluting Practice</h3>
+                    <p>Etiquette training for daily discipline, reinforcing courtesy, command respect, and professional appearance</p>
+                </div>
+                <div class="training-card">
+                    <div class="training-image">
+                        <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=250&fit=crop" alt="Fire Fighting Training">
+                    </div>
+                    <div class="training-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Fire Fighting Training</h3>
+                    <p>Advanced training on evacuation, fire alarms, hydrant operations, rescue protocols, and firefighting coordination</p>
+                </div>
+                <div class="training-card">
+                    <div class="training-image">
+                        <img src="https://images.unsplash.com/photo-1609220136736-443140cffec6?w=400&h=250&fit=crop" alt="Fire Extinguisher Training">
+                    </div>
+                    <div class="training-icon">
+                        <i class="fas fa-fire-extinguisher"></i>
+                    </div>
+                    <h3>Fire Extinguisher Training</h3>
+                    <p>Practical training on extinguisher types, usage techniques, and quick response to small-scale fire incidents</p>
+                </div>
+                <div class="training-card">
+                    <div class="training-image">
+                        <img src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=400&h=250&fit=crop" alt="Prompt Response">
+                    </div>
+                    <div class="training-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Prompt Response</h3>
+                    <p>Immediate response training for security breaches, emergencies, and suspicious activities with escalation protocols</p>
+                </div>
+                <div class="training-card">
+                    <div class="training-image">
+                        <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400&h=250&fit=crop" alt="Vehicle Checking">
+                    </div>
+                    <div class="training-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Vehicle Checking</h3>
+                    <p>Strict screening procedures including undercarriage inspection, boot checks, and ID verification</p>
+                </div>
+                <div class="training-card">
+                    <div class="training-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=250&fit=crop" alt="On Job Training">
+                    </div>
+                    <div class="training-icon">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <h3>On Job Training</h3>
+                    <p>Site-specific training covering layout, emergency exits, equipment use, and shift duties</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section id="industries" class="industries-section">
+        <div class="container">
+            <div class="section-header-modern">
+                <span class="section-tag">Industries We Serve</span>
+                <h2>Trusted Across Multiple Sectors</h2>
+                <p>We proudly serve diverse industries with our professional security and housekeeping services</p>
+            </div>
+            <div class="sectors-grid">
+                <div class="sector-card">
+                    <div class="sector-image">
+                        <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=400&h=300&fit=crop" alt="Automobile">
+                        <div class="sector-overlay">
+                            <i class="fas fa-car"></i>
+                        </div>
+                    </div>
+                    <div class="sector-content">
+                        <h3>Automobile</h3>
+                        <p>Security solutions for automotive manufacturing plants and showrooms</p>
+                    </div>
+                </div>
+                <div class="sector-card">
+                    <div class="sector-image">
+                        <img src="https://images.unsplash.com/photo-1541354329998-f4d9a9f9297f?w=400&h=300&fit=crop" alt="Banking">
+                        <div class="sector-overlay">
+                            <i class="fas fa-university"></i>
+                        </div>
+                    </div>
+                    <div class="sector-content">
+                        <h3>Banking</h3>
+                        <p>High-security solutions for banks, ATMs, and financial institutions</p>
+                    </div>
+                </div>
+                <div class="sector-card">
+                    <div class="sector-image">
+                        <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=400&h=300&fit=crop" alt="Educational & Training">
+                        <div class="sector-overlay">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                    <div class="sector-content">
+                        <h3>Educational & Training</h3>
+                        <p>Comprehensive security for schools, colleges, and training institutes</p>
+                    </div>
+                </div>
+                <div class="sector-card">
+                    <div class="sector-image">
+                        <img src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=400&h=300&fit=crop" alt="Healthcare">
+                        <div class="sector-overlay">
+                            <i class="fas fa-hospital"></i>
+                        </div>
+                    </div>
+                    <div class="sector-content">
+                        <h3>Healthcare</h3>
+                        <p>Specialized security and housekeeping for healthcare facilities</p>
+                    </div>
+                </div>
+                <div class="sector-card">
+                    <div class="sector-image">
+                        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&h=300&fit=crop" alt="Manufacturing">
+                        <div class="sector-overlay">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                    </div>
+                    <div class="sector-content">
+                        <h3>Manufacturing</h3>
+                        <p>Round-the-clock security for manufacturing units and warehouses</p>
+                    </div>
+                </div>
+                <div class="sector-card">
+                    <div class="sector-image">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop" alt="Pharmaceutical">
+                        <div class="sector-overlay">
+                            <i class="fas fa-pills"></i>
+                        </div>
+                    </div>
+                    <div class="sector-content">
+                        <h3>Pharmaceutical</h3>
+                        <p>Secure environments for pharmaceutical companies and research facilities</p>
+                    </div>
+                </div>
+                <div class="sector-card">
+                    <div class="sector-image">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=300&fit=crop" alt="Residential">
+                        <div class="sector-overlay">
+                            <i class="fas fa-home"></i>
+                        </div>
+                    </div>
+                    <div class="sector-content">
+                        <h3>Residential</h3>
+                        <p>Premium security services for apartments, societies, and gated communities</p>
+                    </div>
+                </div>
+                <div class="sector-card">
+                    <div class="sector-image">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=300&fit=crop" alt="Hotels & Hospitality">
+                        <div class="sector-overlay">
+                            <i class="fas fa-hotel"></i>
+                        </div>
+                    </div>
+                    <div class="sector-content">
+                        <h3>Hotels & Hospitality</h3>
+                        <p>Security and housekeeping services for hotels and hospitality industry</p>
+                    </div>
+                </div>
+                <div class="sector-card">
+                    <div class="sector-image">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop" alt="Entertainment & Media">
+                        <div class="sector-overlay">
+                            <i class="fas fa-film"></i>
+                        </div>
+                    </div>
+                    <div class="sector-content">
+                        <h3>Entertainment & Media</h3>
+                        <p>Event security and crowd management for entertainment venues</p>
+                    </div>
+                </div>
+                <div class="sector-card">
+                    <div class="sector-image">
+                        <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400&h=300&fit=crop" alt="Jewellers & Granites">
+                        <div class="sector-overlay">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                    </div>
+                    <div class="sector-content">
+                        <h3>Jewellers & Granites</h3>
+                        <p>High-value asset protection for jewelry stores and granite showrooms</p>
+                    </div>
+                </div>
+                <div class="sector-card">
+                    <div class="sector-image">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=400&h=300&fit=crop" alt="Industrial">
+                        <div class="sector-overlay">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                    </div>
+                    <div class="sector-content">
+                        <h3>Industrial</h3>
+                        <p>Industrial security for factories, plants, and production facilities</p>
+                    </div>
+                </div>
+                <div class="sector-card">
+                    <div class="sector-image">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Textile">
+                        <div class="sector-overlay">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                    </div>
+                    <div class="sector-content">
+                        <h3>Textile</h3>
+                        <p>Security solutions for textile mills and garment manufacturing units</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-header-modern">
+                <span class="section-tag">Client Feedback</span>
+                <h2>What Our Clients Say</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Excellent security services! The guards are professional, well-trained, and always alert. Highly recommended for residential societies."</p>
+                    <div class="client-info">
+                        <h4>Rajesh Kumar</h4>
+                        <span>Society Chairman</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"We've been using Shield Security for our corporate office for 2 years. Their professionalism and prompt response are commendable."</p>
+                    <div class="client-info">
+                        <h4>Priya Sharma</h4>
+                        <span>HR Manager</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Best security service in Pune! Their housekeeping staff is also very efficient. Great value for money."</p>
+                    <div class="client-info">
+                        <h4>Amit Deshmukh</h4>
+                        <span>Business Owner</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section class="feedback-section">
+        <div class="container">
+            <div class="section-header-modern">
+                <span class="section-tag">Feedback</span>
+                <h2>Share Your Experience</h2>
+                <p>We value your feedback and continuously strive to improve our services</p>
+            </div>
+            <div class="feedback-form-wrapper">
+                <form id="feedbackForm" class="feedback-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="feedbackName" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="feedbackEmail" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <select id="feedbackRating" required>
+                            <option value="">Rate Our Service</option>
+                            <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+                            <option value="4">⭐⭐⭐⭐ Very Good</option>
+                            <option value="3">⭐⭐⭐ Good</option>
+                            <option value="2">⭐⭐ Fair</option>
+                            <option value="1">⭐ Poor</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="feedbackMessage" rows="5" placeholder="Your Feedback" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Feedback</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-modern">
+        <div class="container">
+            <div class="section-header-modern">
+                <span class="section-tag">Contact Us</span>
+                <h2>Let's Start a Conversation</h2>
+                <p>Get in touch for a free consultation</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info-modern">
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt" style="color: #EA4335;"></i>
+                        <h3>Location</h3>
+                        <p>Office no. 328, 3rd Floor, Shree Ganesh Galaxy Wadmukhwadi, Pune - 412105</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-phone" style="color: #0088cc;"></i>
+                        <h3>Phone</h3>
+                        <p><a href="tel:7385390359">Call Now</a></p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-envelope" style="color: #EA4335;"></i>
+                        <h3>Email</h3>
+                        <p>shieldservices.official@gmail.com</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fab fa-whatsapp" style="color: #25D366;"></i>
+                        <h3>WhatsApp</h3>
+                        <p><a href="https://wa.me/917385390359">Message Us</a></p>
+                    </div>
+                </div>
+                <div class="contact-form-modern">
+                    <form id="enquiryForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="service" required>
+                                <option value="">Select Service Required in Pune</option>
+                                <option value="hospital-security">Hospital Security in Pune</option>
+                                <option value="bank-security">Bank & Financial Security in Pune</option>
+                                <option value="restaurant-security">Restaurant & Hotel Security in Pune</option>
+                                <option value="apartment-security">Apartment & Society Security in Pune</option>
+                                <option value="corporate-security">IT Park & Corporate Security in Pune</option>
+                                <option value="villa-security">Bungalow & Villa Security in Pune</option>
+                                <option value="school-security">School & Educational Security in Pune</option>
+                                <option value="event-security">Event & VIP Security in Pune</option>
+                                <option value="housekeeping">Housekeeping Services in Pune</option>
+                                <option value="bouncer-services">Bouncer Services in Pune</option>
+                                <option value="cctv-surveillance">CCTV Surveillance in Pune</option>
+                                <option value="fire-safety">Fire Safety Training in Pune</option>
+                                <option value="other">Other Services in Pune</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="4" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Submit Enquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-modern">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3><img src="/images/logo.jpeg" alt="Shield Security Services" style="height: 30px; width: auto; margin-right: 10px;"> Shield Security Services</h3>
+                    <p>Professional Safety & Security Services You Can Trust. Protecting what matters most with 24/7 security solutions.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/shieldsecurityservices/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/917385390359" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#training">Training</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#services">Hospital Security</a></li>
+                        <li><a href="#services">Bank & Financial Security</a></li>
+                        <li><a href="#services">Corporate Security</a></li>
+                        <li><a href="#services">Event & VIP Security</a></li>
+                        <li><a href="#services">Housekeeping Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-phone"></i> +91 99207 14444</li>
+                        <li><i class="fas fa-phone"></i> +91 73853 90359</li>
+                        <li><i class="fas fa-envelope"></i> shieldservices.official@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Office no. 328, 3rd Floor, Shree Ganesh Galaxy Wadmukhwadi, Pune - 412105</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Shield Security Services Pune. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Buttons -->
+    <a href="tel:7385390359" class="call-float" title="Call Now">
+        <i class="fas fa-phone"></i>
+    </a>
+    <a href="https://wa.me/917385390359" class="whatsapp-float" target="_blank" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script th:src="@{/js/script.js}"></script>
+    <script>
+        // Loading screen functionality
+        window.addEventListener('load', function() {
+            const loadingScreen = document.getElementById('loading-screen');
+            setTimeout(() => {
+                loadingScreen.classList.add('fade-out');
+                setTimeout(() => {
+                    loadingScreen.style.display = 'none';
+                }, 500);
+            }, 1000);
+        });
+        
+        // Track page visit for analytics
+        fetch('/api/track', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).catch(err => console.log('Analytics tracking failed'));
+    </script>
+</body>
+</html>
